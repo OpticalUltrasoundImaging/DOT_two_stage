@@ -5,7 +5,6 @@ Created on Tue Oct  4 11:31:16 2022
 
 @author: Menghao Zhang, Shuying Li, Minghao Xue
 
-DOT image only model is only used for the final comparison, not applied in the two-stage approach
 """
 
 from scipy import io as sio
