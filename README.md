@@ -3,7 +3,7 @@ A two-stage diagnosis approach to achieve an automated, fast, and accurate class
 
 **by Menghao Zhang, Shuying Li, and Minghao Xue. (https://opticalultrasoundimaging.wustl.edu/)**
 
-![This is an image]([[https://github.com/OpticalUltrasoundImaging/Fusion_model/blob/main/Figs/Second stage.tif](https://github.com/OpticalUltrasoundImaging/DOT_two_stage/blob/main/Figs/First%20stage.tif](https://github.com/OpticalUltrasoundImaging/DOT_two_stage/blob/main/Figs/First_stage.tif)))
+![This is an image](https://github.com/OpticalUltrasoundImaging/DOT_two_stage/blob/main/Figs/First_stage.tif)
 ## Abstract
 
 We propose a two-stage classification strategy with deep learning. In the first stage, US images and histograms created from DOT perturbation measurements are combined to predict benign lesions. Then the non-benign suspicious lesions are passed through to the second stage, which combines US image features and DOT histogram features and 3D DOT reconstructed images for final diagnosis. The first stage alone identified 73.0% of benign cases without image reconstruction. In distinguishing between benign and malignant breast lesions in patient data, the two-stage classification approach achieved an AUC of 0.946, outperforming the diagnoses of all single-modality models, and of a single-stage classification model that combines all US images, DOT histogram and imaging features. The proposed two-stage classification strategy achieves better classification accuracy than single-modality-only models and a single-stage classification model that combines all features. It can potentially distinguish breast cancers from benign lesions in near real-time.
