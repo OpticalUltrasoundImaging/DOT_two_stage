@@ -17,9 +17,18 @@ We propose a two-stage classification strategy with deep learning. In the first 
 
 ## Details
 
-Traing and testing files can be found in
+Traing and testing files can be found in the folder Code.
 
-Testing example can be found in dot_us_model.py.
+**First stage**
+DOT histogram: DOT_histogram_training.py
+US images: train_vgg_w_opensource.py
+DOT reconstruction: DOT_image_only.py
+
+**Second stage**
+Combined: DOT_hist_image_US_fusion.py
+
+**Two stage combination**
+two_stage_combine.py
 
 ## Contact
 
