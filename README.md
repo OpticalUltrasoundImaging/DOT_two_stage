@@ -8,7 +8,7 @@ A two-stage diagnosis approach to achieve an automated, fast, and accurate class
 ![This is an image](https://github.com/OpticalUltrasoundImaging/DOT_two_stage/blob/main/Figs/Second_stage.png)
 ## Abstract
 
-We propose a two-stage classification strategy with deep learning. In the first stage, US images and histograms created from DOT perturbation measurements are combined to predict benign lesions. Then the non-benign suspicious lesions are passed through to the second stage, which combines US image features and DOT histogram features and 3D DOT reconstructed images for final diagnosis. The first stage alone identified 73.0% of benign cases without image reconstruction. In distinguishing between benign and malignant breast lesions in patient data, the two-stage classification approach achieved an AUC of 0.946, outperforming the diagnoses of all single-modality models, and of a single-stage classification model that combines all US images, DOT histogram and imaging features. The proposed two-stage classification strategy achieves better classification accuracy than single-modality-only models and a single-stage classification model that combines all features. It can potentially distinguish breast cancers from benign lesions in near real-time.
+Ultrasound (US)-guided diffuse optical tomography (DOT) is a portable and non-invasive imaging modality for breast cancer diagnosis and treatment response monitoring. However, DOT data pre-processing and imaging reconstruction often require labor intensive manual processing which hampers real-time diagnosis. In this study, we aim at providing an automated US-assisted DOT pre-processing, imaging and diagnosis pipeline to achieve near real-time diagnosis. We have developed an automated DOT pre-processing method including motion detection, mismatch classification using deep-learning approach, and outlier removal. US-lesion information needed for DOT reconstruction was extracted by a semi-automated lesion segmentation approach combined with a US reading algorithm.  A deep learning model was used to evaluate the quality of the reconstructed DOT images and a deep-learning fusion model is implemented to provide final diagnosis based on US imaging features and DOT measurements and imaging results. The presented US-assisted DOT pipeline accurately processed the DOT measurements and reconstruction and reduced the procedure time to 2 to 3 minutes while maintained a comparable classification result with manually processed dataset.
 
 ## Requirements
 * Python: 3.7+
@@ -18,20 +18,6 @@ We propose a two-stage classification strategy with deep learning. In the first 
 * scipy: 1.7.1
 * scikit-learn: 1.3
 
-## Details
-
-Traing and testing files can be found in the folder Code.
-
-**First stage**
-DOT histogram: DOT_histogram_training.py
-US images: train_vgg_w_opensource.py
-DOT reconstruction: DOT_image_only.py
-
-**Second stage**
-Combined: DOT_hist_image_US_fusion.py
-
-**Two stage combination**
-two_stage_combine.py
 
 ## Contact
 
